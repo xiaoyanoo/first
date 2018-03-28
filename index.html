@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+	<meta name="generator" content="Hugo 0.33" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Hugo XMag | PerfXLab</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+
+  </head>
+  <div class="zhezhao" id="zhezhao"></div>
+  <img id="toTop" onclick="topp(this)" style="position: fixed;bottom:5rem;right: 2rem;cursor: pointer;display: none" src="/images/icons/top.png"/>
+
+  <body  id="body">
+    <nav class="header">
+      <div>
+        <img style="float: left" src="/images/icons/logo.png" />
+        <a style="    color: #0071bc;
+    border: 1px solid #0071bc;
+    padding: 0px 4px 2px 4px;height: 1.5rem;
+    margin-top: 1.3rem;float: right" href="http://perfxlab.com/">EN</a>
+        <ul style="display: inline-block;float: right;color:#0071bc;" class="menu">
+
+
+          
+          <li style="margin-top: 1rem;margin-right: 3rem"><a onclick="curr(this)" id="h_nav_0"  class="h_nav " style="color:#333;" href="/about#index"><span data-hover="首页">首页</span></a></li>
+          
+          <li style="margin-top: 1rem;margin-right: 3rem"><a onclick="curr(this)" id="h_nav_1"  class="h_nav " style="color:#333;" href="/about#about_us"><span data-hover="关于我们">关于我们</span></a></li>
+          
+          <li style="margin-top: 1rem;margin-right: 3rem"><a onclick="curr(this)" id="h_nav_2"  class="h_nav " style="color:#333;" href="/about#product"><span data-hover="产品简介">产品简介</span></a></li>
+          
+          <li style="margin-top: 1rem;margin-right: 3rem"><a onclick="curr(this)" id="h_nav_3"  class="h_nav " style="color:#333;" href="/about#contact"><span data-hover="联系我们">联系我们</span></a></li>
+          
+          <li style="margin-top: 1rem;margin-right: 3rem"><a onclick="curr(this)" id="h_nav_4"  class="h_nav " style="color:#333;" href="/#blog"><span data-hover="BLOG">BLOG</span></a></li>
+          
+
+        </ul>
+
+      </div>
+
+
+      <div style="width: 100%" class="head-meta">
+
+        <div style="width: 100%;">
+          <img style="
+    position: absolute;
+        margin-left: -32rem;
+    margin-top: 7rem;" src="/images/icons/banner.png" />
+          <div style="    text-align: center;
+    margin-top: 10rem;    margin-bottom: 6rem;    margin-left: 9rem;">
+      <span style="    background: #0071bc;
+    color: #fff;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 19rem;">澎峰科技</span>
+            <p style="font-size: 3rem;
+    font-weight: 500;">PerfXLab</p>
+            <h3 style="font-size: 2rem">Discovering Potential. Driving Perf<img src="/images/icons/perf.png" />rmance</h3>
+            <p style="    font-size: 1rem;margin-bottom: 2rem">挖掘AI潜能，引领客户潜能。</p>
+            <a style="color:#eb8004;font-size: 1rem;
+    padding: 0.3rem 2rem;
+    border: 1px solid #eb8004;cursor: pointer" href="#contact_h" >加入我们</a>
+          </div>
+
+        </div>
+
+      </div>
+    </nav>
+  <script>
+    window.onload = function(){
+      var test = window.location.href;
+      console.log(test)
+      if(test.indexOf("index") != -1){
+        document.getElementById('h_nav_0').classList.add('curr')
+
+      }
+      if(test.indexOf("about_us") != -1){
+        document.getElementById('h_nav_1').classList.add('curr')
+      }
+      if(test.indexOf("product") != -1){
+        document.getElementById('h_nav_2').classList.add('curr')
+      }
+      if(test.indexOf("contact") != -1){
+        document.getElementById('h_nav_3').classList.add('curr')
+      }
+      if(test.indexOf("blog") != -1 || test.indexOf("page") != -1 || test.indexOf("post") != -1){
+        document.getElementById('h_nav_4').classList.add('curr')
+        document.getElementById('body').style.setProperty('background','#fafafa')
+      }
+
+    };
+    function curr(obj){
+
+
+
+
+
+      var len=document.getElementsByClassName('h_nav').length;
+      var nav=document.getElementsByClassName('h_nav');
+      var post=document.getElementsByClassName('h_nav');
+      var post_len=post.length;
+      for(var i=0;i<len;i++){
+        console.log(nav[i]);
+        nav[i].classList.remove('curr');
+        nav[i].index=i;
+
+      }
+      obj.classList.add('curr');
+
+    }
+    function topp(obj){
+
+      window.scrollTo(0,0);
+    }
+    window.onscroll = function(){
+      var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      if(scrollTop>100){
+        document.getElementById('toTop').style.setProperty('display','block')
+      }else{
+        document.getElementById('toTop').style.setProperty('display','none')
+      }
+
+    }
+
+  </script>
+
+<div class="container">
+<main class="list">
+
+
+<section class="article-list">
+  <div class="categories">
+  
+  
+    
+  
+  
+  </div>
+  
+  <div class="date-author">
+    
+    
+  </div>
+  <div class="summary">
+    <a href="/post/2017/02/14/a-plain-markdown-post/">
+    
+    
+    
+    <div class="thumbnail"><img src="https://bookdown.org/yihui/blogdown/images/new-post.png" alt="Thumbnail" /></div>
+    
+    
+    
+      
+    
+    This sample post is mainly for blogdown users. If you do not use blogdown, you can skip the first section. To know more about the Hugo XMag theme, please read the About page.
+[&hellip;] This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:&hellip;
+    </a>
+  </div>
+</section>
+
+<section class="article-list">
+  <div class="categories">
+  
+  
+    
+  
+  
+  </div>
+  
+  <div class="date-author">
+    
+    
+  </div>
+  <div class="summary">
+    <a href="/post/2015/07/28/jeff-leek-can-do-zero-fold-cross-validation/">
+    
+    <div class="thumbnail"><img src="/images/icons/list3.png" alt="Thumbnail" /></div>
+    
+    
+      
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse&hellip;
+    </a>
+  </div>
+</section>
+
+<section class="article-list">
+  <div class="categories">
+  
+  
+    
+  
+  
+  </div>
+  
+  <div class="date-author">
+    
+    
+  </div>
+  <div class="summary">
+    <a href="/post/2015/07/27/correlation-implies-whatever-jeff-leek-tells-it-to-imply/">
+    
+    <div class="thumbnail"><img src="/images/icons/list4.png" alt="Thumbnail" /></div>
+    
+    
+      
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse&hellip;
+    </a>
+  </div>
+</section>
+
+<section class="article-list">
+  <div class="categories">
+  
+  
+    
+  
+  
+  </div>
+  
+  <div class="date-author">
+    
+    
+  </div>
+  <div class="summary">
+    <a href="/post/2015/07/26/jeff-leek-counted-to-infinity.-twice./">
+    
+    <div class="thumbnail"><img src="/images/icons/list3.png" alt="Thumbnail" /></div>
+    
+    
+      
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse&hellip;
+    </a>
+  </div>
+</section>
+
+<section class="article-list">
+  <div class="categories">
+  
+  
+    
+  
+  
+  </div>
+  
+  <div class="date-author">
+    
+    
+  </div>
+  <div class="summary">
+    <a href="/post/2015/07/25/git-commits-to-jeff-leek/">
+    
+    <div class="thumbnail"><img src="/images/icons/list2.png" alt="Thumbnail" /></div>
+    
+    
+      
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse&hellip;
+    </a>
+  </div>
+</section>
+
+<section class="article-list">
+  <div class="categories">
+  
+  
+    
+  
+  
+  </div>
+  
+  <div class="date-author">
+    
+    
+  </div>
+  <div class="summary">
+    <a href="/post/2015/07/24/jeff-leek-always-obtains-unbiased-estimators/">
+    
+    <div class="thumbnail"><img src="/images/icons/list1.png" alt="Thumbnail" /></div>
+    
+    
+      
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse&hellip;
+    </a>
+  </div>
+</section>
+
+</main>
+<nav>
+
+<ul class="pagination">
+    
+    <li>
+        <a href="/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li
+    class="disabled">
+    <a href="" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li
+    class="active"><a href="/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li
+    ><a href="/page/2/">2</a></li>
+    
+    
+    <li
+    >
+    <a href="/page/2/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li>
+        <a href="/page/2/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+</nav>
+</div>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+<style>
+  .contact_h,.shangwu,.lianxi,.zhezaho{text-align: center}
+  .contact_h p{margin-top: 6rem}
+  .contact_h h3{color: #0071bc;font-size: 2rem;}
+  .contact_h p span{    padding:0rem 2rem;cursor: pointer;}
+  .contact_h p span:hover{color:#0071bc }
+  .shangwu p{color:#959595;font-size: 1rem;margin-top: 2rem;margin-bottom: 2rem}
+  .color{color:#0071bc}
+  .lianxi_b{color:#0071bc;font-weight: 500;}
+  .lianxi_b span{ margin-right: 17rem;cursor: pointer}
+  .tanchuang span{color:#0071bc;font-weight: 500;font-size:1.25rem ;display: block;margin-top: 1rem;}
+  .tanchuang{display: none;border-radius: 5px;text-align: center;position: fixed;z-index: 12;bottom:-11px;height: 570px;width: 100%;background: #fff}
+  .tanchuang_c{background: #f0f0f0;display: inline-block;width: 80%;border-radius: 1rem;}
+  .tanchuang_c div{display: inline-block}
+  .tanchuang_c_h{font-size: 1rem;margin: 1rem 0rem 2rem 0rem}
+  .tanchuang_c_l p label,.tanchuang_c_r p label{font-size: 1rem;margin-right: 2rem;float: left}
+  .tanchuang_c_l{float: left;margin-left: 5rem}
+  .tanchuang_c_r{float:right;margin-right: 5rem}
+  .tanchuang_c_l p input,.tanchuang_c_r p input{ width: 16rem;border: none;outline:none;font-size: 0.5rem;padding:0rem 0.5rem;height: 1.5rem;float: left;margin-bottom: 3rem;}
+  textarea{width: 16rem; border: none;outline:none;height: 5rem;resize: none;font-size: 0.5rem;padding: 0.5rem}
+  .zhezhao{display: none;width: 100%;height:158%;;background: rgba(240, 240, 240, 0.45);position: fixed;z-index: 11;    margin-top: -100px;}
+  .send:hover{background: #409cd9 !important;}
+</style>
+<footer style="background: #fff;padding-top: 5rem">
+
+
+  <div id='contact_h' class="contact_h">
+    <h3 style="padding-top:2rem" id="contact">联系-我们</h3>
+    <p><span onclick="curr2(this)" data-index="0" class="curr2 tab" style="border-right: 1px solid #ccc;">商务合作</span><span data-index="1" class="tab" onclick="curr2(this)">加入我们</span></p>
+  </div>
+  <div class="shangwu curr3 tab2" style="margin-bottom: 6rem;display: none">
+    <p>联络我们</p>
+    <p>PerfXLab澎峰科技期待与您合作</p>
+    <p>Discovering Potential. Driving Performance</p>
+    <p>地址：北京市海淀区知春路7号北航致真大夏A座1602（北京航空航天大学东南角）</p>
+    <p>邮编：100191</p>
+            <span style="font-size: 1.1rem;
+    color: #000;">邮箱：info@perfxlab.com</span>
+  </div>
+  <div class="lianxi tab2" style="display: none;">
+    <p style="color:#959595;font-size: 1rem;margin-top:6rem;margin-bottom: 6rem">欢迎加入，正在招聘的职位</p>
+    <p  class="lianxi_b"><span onclick="curr3(this)" class="tab3">HPC高性能计算</span><span onclick="curr3(this)" class="tab3">FPGA工程师</span><span onclick="curr3(this)" class="tab3" style="margin-right: 0px">计算机视觉工程师</span></p>
+    <p style="color:#333;font-size: 1rem;margin-top:7rem;margin-bottom: 4rem">或直接投递简历到：jops@perfxlab.com</p>
+  </div>
+  <div style="text-align: center" class="tanchuang" id="tanchuang">
+    <b id="cha" onclick="del(this)"  style="font-size: 5rem;
+    font-weight: 0;
+    margin-top: 1rem;
+    display: inline-block;
+    float: right;margin-right: 30px;cursor: pointer">×</b>
+    <span style="margin-left: 5rem;margin-bottom: 2rem;margin-top: 1rem">HPC高性能计算</span>
+    <form name="frmEmailOutLook" action="" method="post" enctype="text/plain">
+      <input type="hidden" name="message" value="">
+    </form>
+    <form name="frmEmail" action="" method="post">
+      <div class="tanchuang_c">
+        <p class="tanchuang_c_h">简历投递</p>
+        <p class="tanchuang_c_h">职位详情</p>
+        <div class="tanchuang_c_l">
+          <p><label>姓名</label><input type="text" name="name" /></p>
+          <p><label>邮箱</label><input type="text" name="email" /></p>
+          <p><label>简历&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp请点击确认投递之后上传附件</label></p>
+        </div>
+        <div class="tanchuang_c_r">
+          <p><label>手机</label><input type="text" name="phone" /></p>
+          <p><label>备注</label><textarea type="text" name="mark" ></textarea></p>
+        </div>
+        <input type="button" name="send" onClick="toOutLook()" class="send" style="background:#0071bc;padding: 0rem 1.5rem;font-size: 1.1rem;color:#fff;display: inline-block;border-radius: 0.3rem;line-height: 2.5rem;margin-bottom: 2rem;cursor: pointer
+                 ;border:none;margin-top: 15rem" value="确认投递">
+        <a href="mailto" id="send"></a>
+      </div>
+    </form>
+  </div>
+
+  <div style="background: #333333;color:#888;height: 4rem;line-height: 4rem" class="footer">
+    © 2017  BY  MOMENTA
+  </div>
+</footer>
+
+
+
+
+
+
+
+</body>
+</html>
+<script>
+  function del(obj){
+    var zhezhao=document.getElementById('zhezhao')
+    zhezhao.style.setProperty('display', 'none');
+    document.getElementById('tanchuang').setAttribute('style', 'display: none !important');
+  }
+
+  function curr3(obj){
+    var zhezhao=document.getElementById('zhezhao')
+    zhezhao.style.setProperty('display', 'block');
+    document.getElementById('tanchuang').setAttribute('style', 'display: block !important');
+  }
+  function curr2(obj){
+    var len=document.getElementsByClassName('tab').length;
+    var nav=document.getElementsByClassName('tab');
+    var post=document.getElementsByClassName('tab');
+    var arr=document.getElementsByClassName('tab2');
+    var post_len=post.length;
+    for(var i=0;i<len;i++){
+      console.log(nav[i]);
+      nav[i].classList.remove('curr2');
+      nav[i].index=i;
+      arr[i].classList.remove('curr3');
+    }
+    var index=obj.getAttribute('data-index')
+    obj.classList.add('curr2');
+    arr[index].classList.add('curr3');
+  }
+  function toOutLook(){
+    var objFrm = document.frmEmail;
+    var objFrmOutLook = document.frmEmailOutLook;
+    if(!objFrm.name.value){
+      alert("请填写姓名");
+      return false;
+    }
+    if(!objFrm.name.value){
+      alert("请填写邮箱");
+      return false;
+    }
+    if(!objFrm.name.value){
+      alert("请填写手机");
+      return false;
+    }
+    if(!objFrm.name.value){
+      alert("请填写姓名");
+      return false;
+    }
+    var send = document.getElementById('send');
+    var body = "";
+    body += "姓名: " + objFrm.name.value + "%0a%0d";
+    body += "邮箱: " + objFrm.email.value + "%0a%0d";
+
+    body += "手机: " + objFrm.phone.value + "%0a%0d";
+    body += "备注: " + objFrm.mark.value + "%0a%0d";
+
+    send.href="mailto:jops@perfxlab.com?body="+body;
+    document.getElementById("send").click();
+
+
+
+  }
+
+</script>
